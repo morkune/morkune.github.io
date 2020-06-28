@@ -1,0 +1,126 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin-top: 0;
+}
+
+.container {
+  position: relative;
+  font-family: "Roboto", sans-serif;
+  color: #292929;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 30px;
+  max-width: 960px;
+  margin: 100px auto;
+  grid-template-areas:
+    "profile contact"
+    "first second";
+}
+
+.download-link {
+  position: absolute;
+  top: -40px;
+  right: 0;
+  color: #292929;
+}
+
+.profile-section {
+  grid-area: profile;
+  display: grid;
+  grid-template-columns: 3fr 7fr;
+  gap: 20px;
+}
+
+.name {
+  margin-bottom: 0.75rem;
+}
+
+.contact-section {
+  grid-area: contact;
+}
+
+.contact-section a {
+  display: block;
+  color: #292929;
+}
+
+.first-column {
+  grid-area: first;
+}
+
+.second-column {
+  grid-area: second;
+}
+
+.photo-container {
+  margin: 0;
+}
+
+.photo {
+  width: 100%;
+  height: auto;
+}
+
+.date,
+.level {
+  color: #9b9b9b;
+}
+
+.contact-section p,
+.contact-section a,
+.section-entry-container p,
+.section-entry-container h3 {
+  margin: 0 0 0.5rem;
+}
+
+.section-entry-container {
+  margin-bottom: 20px;
+}
+
+.section-container {
+  margin-bottom: 26px;
+}
+
+.headline-container,
+.contact-section {
+  align-self: center;
+}
+
+.title {
+  text-transform: uppercase;
+  border-bottom: 1px solid #dadada;
+  margin: 0 0 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.skill-container,
+.languages-container {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 1023px) {
+  .container {
+    margin-left: 20px;
+    margin-right: 20px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "profile"
+      "contact"
+      "second"
+      "first";
+  }
+}
+
+@media (max-width: 767px) {
+  .profile-section {
+    grid-template-columns: 1fr;
+  }
+}
