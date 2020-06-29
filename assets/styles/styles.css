@@ -13,6 +13,14 @@ ul {
   margin-top: 0;
 }
 
+a {
+  color: #292929;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
 .container {
   position: relative;
   font-family: "Roboto", sans-serif;
@@ -31,7 +39,6 @@ ul {
   position: absolute;
   top: -40px;
   right: 0;
-  color: #292929;
 }
 
 .profile-section {
@@ -49,9 +56,8 @@ ul {
   grid-area: contact;
 }
 
-.contact-section a {
-  display: block;
-  color: #292929;
+.contact-entry-container {
+  margin-bottom: 0.3rem;
 }
 
 .first-column {
