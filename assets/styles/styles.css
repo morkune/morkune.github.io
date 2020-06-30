@@ -60,6 +60,20 @@ a:hover {
   margin-bottom: 0.3rem;
 }
 
+.fa-phone-alt,
+.fa-envelope {
+  margin-right: 10px;
+}
+.fa-mouse-pointer {
+  margin-right: 13px;
+  margin-left: 3px;
+}
+
+.fa-map-marker-alt {
+  margin-right: 12px;
+  margin-left: 2px;
+}
+
 .first-column {
   grid-area: first;
 }
