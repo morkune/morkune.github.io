@@ -58,20 +58,14 @@ a:hover {
 
 .contact-entry-container {
   margin-bottom: 0.3rem;
+  display: grid;
+  grid-template-columns: 40px 1fr;
 }
 
-.fa-phone-alt,
-.fa-envelope {
-  margin-right: 10px;
-}
-.fa-mouse-pointer {
-  margin-right: 13px;
-  margin-left: 3px;
-}
-
-.fa-map-marker-alt {
-  margin-right: 12px;
-  margin-left: 2px;
+#contact-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .first-column {
